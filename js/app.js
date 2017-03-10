@@ -21,8 +21,11 @@ $("#menu a").each(function () {
 });
 
 // Button for select location
+
 // Bind click to button
+
 	// Go to select location
 
 // Modify CSS to hide links on small widths and show button and select
+
 // Also hides select button on larger widths
