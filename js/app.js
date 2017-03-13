@@ -10,6 +10,11 @@ $("#menu a").each(function(){
 	var $option=$("<option></option>");
 
 
+	// Selected Options based on Page
+	if($anchor.parent().hasClass("selected")) {
+		$option.prop("selected", true);
+	}
+
 	// Value is HREF
 	$option.val($anchor.attr("href"));
 
