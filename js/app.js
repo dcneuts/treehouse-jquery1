@@ -3,7 +3,7 @@ var $select=$("<select></select>");
 $("#menu").append($select);
 
 // Cycle over menu links
-$("#menu a").each(function () {
+$("#menu a").each(function(){
 	var $anchor=$(this);
 
 	// Options
@@ -22,7 +22,14 @@ $("#menu a").each(function () {
 
 // Button for select location
 
+var $button=$("<button>Go</button>");
+$("#menu").append($button);
+
 // Bind click to button
+
+$button.click(function(){
+	window.location=$select.val();
+});
 
 	// Go to select location
 
