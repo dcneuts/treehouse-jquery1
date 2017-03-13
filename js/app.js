@@ -25,19 +25,7 @@ $("#menu a").each(function(){
 	$select.append($option);
 });
 
-// Button for select location
-
-var $button=$("<button>Go</button>");
-$("#menu").append($button);
-
-// Bind click to button
-
-$button.click(function(){
-	window.location=$select.val();
-});
-
-	// Go to select location
-
-// Modify CSS to hide links on small widths and show button and select
-
-// Also hides select button on larger widths
+	// Bind listener for select location
+	$select.change(function () {
+		window.location=$select.val();
+	})
